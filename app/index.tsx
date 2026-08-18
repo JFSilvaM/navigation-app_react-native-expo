@@ -4,7 +4,9 @@ const App = () => {
   return (
     //   <Redirect href="./home" />
 
-    <Redirect href="./tabs" />
+    // <Redirect href="./tabs" />
+
+    <Redirect href="./drawer" />
   );
 };
 
