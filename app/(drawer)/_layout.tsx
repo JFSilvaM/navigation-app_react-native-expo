@@ -1,15 +1,29 @@
+import CustomDrawer from "@/components/shared/custom-drawer";
 import { Ionicons } from "@expo/vector-icons";
 import { Drawer } from "expo-router/drawer";
 
 const DrawerLayout = () => {
   return (
     <Drawer
+      drawerContent={CustomDrawer}
       screenOptions={{
+        headerShown: false,
         drawerActiveTintColor: "indigo",
         headerShadowVisible: false,
         sceneStyle: { backgroundColor: "white" },
       }}
     >
+      <Drawer.Screen
+        name="(tabs)"
+        options={{
+          drawerLabel: "Tabs",
+          title: "Tabs",
+          drawerIcon: ({ color, size }) => (
+            <Ionicons size={size} name="albums-outline" color={color} />
+          ),
+        }}
+      />
+
       <Drawer.Screen
         name="user/index"
         options={{
