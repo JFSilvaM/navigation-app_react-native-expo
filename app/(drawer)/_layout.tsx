@@ -7,7 +7,6 @@ const DrawerLayout = () => {
     <Drawer
       drawerContent={CustomDrawer}
       screenOptions={{
-        headerShown: false,
         drawerActiveTintColor: "indigo",
         headerShadowVisible: false,
         sceneStyle: { backgroundColor: "white" },
@@ -16,6 +15,7 @@ const DrawerLayout = () => {
       <Drawer.Screen
         name="(tabs)"
         options={{
+          headerShown: false,
           drawerLabel: "Tabs",
           title: "Tabs",
           drawerIcon: ({ color, size }) => (

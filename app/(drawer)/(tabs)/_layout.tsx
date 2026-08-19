@@ -6,12 +6,12 @@ const TabsLayout = () => {
     <Tabs
       screenOptions={{
         tabBarActiveTintColor: "indigo",
-        headerShown: false,
       }}
     >
       <Tabs.Screen
         name="(stack)"
         options={{
+          headerShown: false,
           title: "Stack",
           tabBarIcon: ({ color }) => (
             <Ionicons size={28} name="person-outline" color={color} />
